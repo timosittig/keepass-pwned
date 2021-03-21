@@ -17,7 +17,7 @@ def check_pwned(entry):
         for line in html:
             current_hash=result_five+line.split(':')[0]
             if result==current_hash:
-                print('Your ' + entry.title + ' account has been pwned. Password ' + entry.password + ' was found ' + result_five+line.split(':')[1] + ' times in the data set of haveibeenpwned.com')
+                print('Your ' + entry.title + ' account has been pwned. Password ' + entry.password + ' was found ' + line.split(':')[1] + ' times in the data set of haveibeenpwned.com')
                 return True
 
     return False
