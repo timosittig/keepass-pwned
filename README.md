@@ -67,12 +67,3 @@ This will all work automatically. You only have to follow the [HOW TO USE](https
 
 
 
-
-## ON MY TO DO LIST
-
-The next milestones on my to do list are:
-- [x] finished PyKeePass implementation
-- [x] finished implementation of API communication
-- [x] finished implementing command line support for .kdbx file with password
-- [ ] implementing command line support for .kdbx file with key file
-- [ ] implementing command line support for .kdbx file with password and key file
