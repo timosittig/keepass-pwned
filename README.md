@@ -34,4 +34,4 @@ To prove if your password is beeing compromised I am using the API of haveibeenp
 
 It does not transfer your password in plain text. But it will send the first 5 letters of it's SHA-1 hash to [https://api.pwnedpasswords.com/range/](https://haveibeenpwned.com/API/v3#SearchingPwnedPasswordsByRange). Afterwards the API will send an HTTP response with a list of SHA-1 hashes. If one of them matches the SHA-1 hash of your password, your password was leaked in the past.
 
-This will all work automatically. You only have to follow the [HOW TO USE]().
+This will all work automatically. You only have to follow the [HOW TO USE](#HOW-TO-USE).
