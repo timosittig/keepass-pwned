@@ -19,10 +19,10 @@ If there are any problems you can still just copy the source code from [GitHub](
 
 ## HOW TO USE
 
-The script takes two parameters from the command line:
+The script takes up to three parameters from the command line:
 
 ```
-keepass-pwned.py file.kdbx 'mypassword'
+keepass-pwned.py database.kdbx --password="1234" --keyfile="keyfile.keyx;"
 ```
 
 It takes the following parameters:
