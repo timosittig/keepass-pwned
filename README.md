@@ -28,7 +28,7 @@ It takes the following parameters:
 
 ![20210322100129573](https://user-images.githubusercontent.com/47139230/111966712-8356ef80-8af7-11eb-84de-ac220f120b7d.gif)
 
-After hitting **[ENTER]** it will print out every entry 
+After hitting **[ENTER]** it will print out every entry that has been pwned.
 
 
 
