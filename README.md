@@ -26,7 +26,7 @@ It takes the following parameters:
 * `file.kdbx` as the path to the KeePass file.
 * `mypassword` as the password to the KeePass file.
 
-![20210322100129573](https://user-images.githubusercontent.com/47139230/111966712-8356ef80-8af7-11eb-84de-ac220f120b7d.gif)
+![Uploading 20210322102410436.gif…]()
 
 After hitting **[ENTER]** it will print out every entry that has been pwned.
 
