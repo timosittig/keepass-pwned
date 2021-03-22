@@ -1,7 +1,20 @@
 from pykeepass import PyKeePass
 import sys
+import os.path
 import urllib.request
 import hashlib
+import argparse
+
+def handle_sys_args():
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument("database", help="is the database file that you want to prove", type=str)
+    parser.add_argument("-p", "--password", help="is the password", type=str, required=False)
+    parser.add_argument("-k", "--keyfile", help="is your key file", type=str, required=False)
+    
+    args = parser.parse_args()
+
+    return args.database, args.password, args.keyfile
 
 def check_pwned(entry):
     pw = entry.password
@@ -23,14 +36,12 @@ def check_pwned(entry):
     return False
 
 def main():
-    if 1 < len(sys.argv):
-        file = str(sys.argv[1])
-        
-        if 2 < len(sys.argv):
-            password = str(sys.argv[2])
-            
-            kp = PyKeePass(file, password=password)
-            
+    database, password, keyfile = handle_sys_args()
+    
+    if os.path.isfile(str(database)):
+        if password != None or str(keyfile) != None:
+            kp = PyKeePass(database, password=password, keyfile=keyfile)
+
             groups = kp.groups
             pwned_entries = []
             
@@ -42,6 +53,9 @@ def main():
                         pass
                     elif check_pwned(entry):
                         pwned_entries.append(entry)
+            
+            print()
+            print('In total ' + str(len(pwned_entries)) + ' entries have been pwned.')
 
 if __name__=='__main__':
     main()
