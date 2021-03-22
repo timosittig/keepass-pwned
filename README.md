@@ -10,6 +10,8 @@ You can install the script as usual with git:
 git clone https://github.com/timosittig/keepass-pwned
 ```
 
+If there are any problems you can still just copy the source code from [GitHub](https://github.com/timosittig/keepass-pwned/blob/main/keepass_pwned.py) and save it ie next to your KeePass .kdbx file.
+
 
 
 ## HOW TO USE
