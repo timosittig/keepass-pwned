@@ -41,3 +41,14 @@ To prove if your password is beeing compromised I am using the API of haveibeenp
 It does not transfer your password in plain text. But it will send the first 5 letters of it's SHA-1 hash to [https://api.pwnedpasswords.com/range/](https://haveibeenpwned.com/API/v3#SearchingPwnedPasswordsByRange). Afterwards the API will send an HTTP response with a list of SHA-1 hashes. If one of them matches the SHA-1 hash of your password, your password was leaked in the past.
 
 This will all work automatically. You only have to follow the [HOW TO USE](https://github.com/timosittig/keepass-pwned/blob/main/README.md#how-to-use).
+
+
+
+## ON MY TO DO LIST
+
+The next milestones on my to do list are:
+- [x] finished PyKeePass implementation
+- [x] finished implementation of API communication
+- [x] finished implementing command line support for .kdbx file with password
+- [ ] implementing command line support for .kdbx file with key file
+- [ ] implementing command line support for .kdbx file with password and key file
