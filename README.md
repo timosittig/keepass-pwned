@@ -14,6 +14,9 @@ If there are any problems you can still just copy the source code from [GitHub](
 
 
 
+
+
+
 ## HOW TO USE
 
 The script takes two parameters from the command line:
@@ -23,12 +26,30 @@ keepass-pwned.py file.kdbx 'mypassword'
 ```
 
 It takes the following parameters:
-* `file.kdbx` as the path to the KeePass file.
-* `mypassword` as the password to the KeePass file.
-
-![20210322102410436](https://user-images.githubusercontent.com/47139230/111967942-eb5a0580-8af8-11eb-876f-d6833bed072d.gif)
+* `database` as the path to the KeePass file.
+* `--password` as the password to the KeePass file. (optional)
+* `--keyfile` as the keyfile to the KeePass file. (optional)
 
 After hitting **[ENTER]** it will print out every entry that has been pwned.
+
+### Example 1: using a KeePass file and a password
+
+![20210322190108219_pw](https://user-images.githubusercontent.com/47139230/112037086-a9a17d00-8b41-11eb-8bf7-21862ec7be38.gif)
+
+
+
+### Example 2: using a KeePass file and a keyfile
+
+![20210322185908144_keyfile](https://user-images.githubusercontent.com/47139230/112037028-9a223400-8b41-11eb-9792-ad1f2aaca6ed.gif)
+
+
+
+### Example 3: using a KeePass file and both a password and a keyfile!
+
+![20210322185426383_pw+keyfile](https://user-images.githubusercontent.com/47139230/112037040-9c848e00-8b41-11eb-940a-666746c55479.gif)
+
+
+
 
 
 
@@ -41,6 +62,9 @@ To prove if your password is beeing compromised I am using the API of haveibeenp
 It does not transfer your password in plain text. But it will send the first 5 letters of it's SHA-1 hash to [https://api.pwnedpasswords.com/range/](https://haveibeenpwned.com/API/v3#SearchingPwnedPasswordsByRange). Afterwards the API will send an HTTP response with a list of SHA-1 hashes. If one of them matches the SHA-1 hash of your password, your password was leaked in the past.
 
 This will all work automatically. You only have to follow the [HOW TO USE](https://github.com/timosittig/keepass-pwned/blob/main/README.md#how-to-use).
+
+
+
 
 
 
