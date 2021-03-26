@@ -67,3 +67,10 @@ This will all work automatically. You only have to follow the [HOW TO USE](https
 
 
 
+
+## ROADMAP
+
+Next on my roadmap is:
+[ ] Adding --export-csv argument and CSV export implementation
+[ ] Adding --export-json argument and JSON export implementation
+[ ] Adding --export-xml argument and XML export implementation
