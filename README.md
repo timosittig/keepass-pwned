@@ -68,9 +68,14 @@ This will all work automatically. You only have to follow the [HOW TO USE](https
 
 
 
-## ROADMAP
+## ROADMAP / TO DO
 
-Next on my roadmap is:
-- [ ] Adding --export-csv argument and CSV export implementation
-- [ ] Adding --export-json argument and JSON export implementation
-- [ ] Adding --export-xml argument and XML export implementation
+The next milestones on my to do list are:
+- [x] finished PyKeePass implementation
+- [x] finished implementation of API communication
+- [x] finished implementing command line support for .kdbx file with password
+- [x] implementing command line support for .kdbx file with key file
+- [x] implementing command line support for .kdbx file with password and key file
+- [ ] adding --export-csv argument and CSV export implementation
+- [ ] adding --export-json argument and JSON export implementation
+- [ ] adding --export-xml argument and XML export implementation
